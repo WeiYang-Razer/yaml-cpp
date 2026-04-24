@@ -1,0 +1,23 @@
+{
+  "name": "yaml-cpp",
+  "version": "0.0.0.0",
+  "schemaVersion": 2,
+  "kind": "StaticLib",
+  "description": "TODO: one-line description of yaml-cpp",
+  "dependencies": {},
+  "build": {
+    "system": "cmake",
+    "configs": [
+      "Debug",
+      "Release",
+      "RelWithDebInfo",
+      "MinSizeRel"
+    ],
+    "configure": [
+      "-DYAML_CPP_BUILD_TESTS=OFF",
+      "-DYAML_CPP_BUILD_TOOLS=OFF",
+      "-DYAML_CPP_INSTALL=ON"
+    ],
+    "installDir": "install"
+  }
+}
